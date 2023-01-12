@@ -41,6 +41,11 @@ body{
     background-color: var(--background-color);
 }
 
+nav a{
+    position: fixed;
+    padding: var(--normal-padding);
+}
+
 main{
     padding: 3em;
     display: flex;
@@ -63,6 +68,7 @@ article{
 article h2{
     width: 100%;
 }
+
 .dag{
     background-color: var(--background-color-article);
     width: 90vw;
