@@ -1,7 +1,7 @@
 :root{
     --main-color:#fff;
-    --background-color: rgb(226, 224, 187);
-    --background-color-article: rgb(247, 246, 223);
+    --background-color: rgb(255, 252, 199);
+    --background-color-article: rgb(255, 254, 228);
 
     --p-color: #000;
     --p-color-a: rgb(0, 89, 190);
@@ -15,8 +15,10 @@
 
     --normal-padding:.5em;
     --normal-margin:.5em;
+    --text-padding:2em;
     --article-padding: 2em;
     --section-margin: .5em;
+    --section-text-afstand: 0em 10vw 0em 0em;
 
     --font-family-sans: museo-sans;
     --font-family:museo;
@@ -60,4 +62,33 @@ article{
 
 article h2{
     width: 100%;
+}
+.dag{
+    background-color: var(--background-color-article);
+    width: 90vw;
+}
+
+p{
+    padding: var(--normal-padding);
+    text-align: left;
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    padding:var(--text-padding);
+}
+
+.afstandtekst{
+    margin:var(--section-text-afstand);
+}
+
+
+.foto img{
+    width: 90%;
+    height: auto;
+}
+
+.foto{
+    display: flex;
 }
