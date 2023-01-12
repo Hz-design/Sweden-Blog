@@ -1,0 +1,63 @@
+:root{
+    --main-color:#fff;
+    --background-color: rgb(226, 224, 187);
+    --background-color-article: rgb(247, 246, 223);
+
+    --p-color: #000;
+    --p-color-a: rgb(0, 89, 190);
+    --p-color-a-hover: rgb(255, 238, 0);
+
+    --h1-color: #000;
+    --h2-color: #666;
+    --h3-color: #333;
+
+    --white-space:5vw;
+
+    --normal-padding:.5em;
+    --normal-margin:.5em;
+    --article-padding: 2em;
+    --section-margin: .5em;
+
+    --font-family-sans: museo-sans;
+    --font-family:museo;
+
+    --font-size-p: 1em;
+    --font-size-h1: 2em;
+    --font-size-h2: 1.5em;
+    --font-size-h3: 1.3em;
+
+    --letter-spacing: .5em;
+    --letter-spacing-inline: .2em;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+main{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+section{
+    margin:var(--section-margin) ;
+}
+
+article{
+    background-color: var(--background-color-article);
+    padding: var(--article-padding);
+    display: flex;
+    flex-direction: row;
+}
+
+article h2{
+    width: 100%;
+}
